@@ -1,0 +1,76 @@
+
+ /* Triqui Inicial
+      | 1 | 2 | 3 | 
+      | 4 | 5 | 6 |
+      | 7 | 8 | 9 |
+      
+      
+      | (0,0) |(0,1) |(0,2) | 
+      | (1,0) |(1,1) |(1,2) |
+      | (2,0) |(2,1) |(2,2) |
+      
+      Cuando juega X  debe elegir una casilla
+      
+      Suponga que elige la casilla 1
+      Asi es com oquedaria
+      | X | 2 | 3 | 
+      | 4 | 5 | 6 |
+      | 7 | 8 | 9 |
+      
+      Inmediatamente lo que debe suceder es que se cambian los turnos
+      
+      Ahora juega 0
+      que elige 5
+      | X | 2 | 3 | 
+      | 4 | 0 | 6 |
+      | 7 | 8 | 9 |
+      
+      y asi hasta que se da un 3 en linea 
+      
+      Como  verificamos un tres en linea.
+      Sucede en caso puntualea
+      
+      caso 1:
+      | X |   |  | 
+      |   | X |  |
+      |   |   | X|
+      
+      caso 2:
+      |  |   | x |
+      |  | x |   |
+      | x|   |   | 
+      
+      caso 3:
+      | X |   |  | 
+      | X |   |  |
+      | X |   |  |
+      
+      caso 4:
+      |  | X |  | 
+      |  | X |  |
+      |  | X |  |
+      
+      caso 5:
+      |  |  | X | 
+      |  |  | X |
+      |  |  | X |
+      
+      
+      caso 6:
+      | x| x| X | 
+      |  |  |   |
+      |  |  |   |
+      
+      caso 7:   
+      |  |  |   |
+      | x| x| X | 
+      |  |  |   |
+          
+      
+      caso 8:
+      |  |  |   |
+      |  |  |   |
+      | x| x| X | 
+    
+   
+      */      
