@@ -66,10 +66,10 @@ public class TV extends DispositivoElectronico {
         ///interactuar con el sintonizador
     }
 
-    private void actualizarSWxUSB(string firmware) {
+    private void actualizarSWxUSB(String firmware) {
     }
 
-    private void actualizarSWxWifi(string firmware) {
+    private void actualizarSWxWifi(String firmware) {
     }
 
 }
