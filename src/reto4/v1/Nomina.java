@@ -29,6 +29,7 @@ public class Nomina {
         for (Trabajador t : trabajadores) {
             acumu += t.salarioQuincenal();
         }
+        //   trabajadores.forEach(t -> acumu+=t.salarioQuincenal());
         return acumu;
     }
 

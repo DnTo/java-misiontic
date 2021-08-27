@@ -81,6 +81,8 @@ public class SimCard {
      * @param c gigas a comprar
      */
     public void comprarDatos(int c) {
+        
+        //no puedo comprar datos negativos
         if (c < 0) {
             return;
         }
