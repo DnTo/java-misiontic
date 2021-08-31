@@ -1,4 +1,4 @@
-package reto2v3;
+package reto2.v3;
 
 public class Taxi extends Vehiculo {
 

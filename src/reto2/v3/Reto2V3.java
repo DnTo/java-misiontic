@@ -1,4 +1,4 @@
-package reto2v3;
+package reto2.v3;
 
 /**
  *
@@ -69,7 +69,6 @@ public class Reto2V3 {
         v.gestionarPuerta();
         v.recogerPasajero(4);
          */
- 
         //caso de prueba taxi pepe
         /*
         Taxi t = new Taxi("Pepe");
@@ -111,7 +110,7 @@ public class Reto2V3 {
         t.presionarBotonPanico();
         t.dejarPasajero();
         
-      */
+     
         Taxi t = new Taxi("Filomeno");
         t.gestionarMotor();
         t.recogerPasajero();
@@ -132,7 +131,29 @@ public class Reto2V3 {
         t.gestionarMarcha();
         t.gestionarSeguros(); 
         t.dejarPasajero();
-//*/
+         */
+        
+        
+        System.out.println("FILOMENO BUS");
+        Autobus v = new Autobus("Filomeno", 2);
+        v.gestionarPuerta();
+        v.recogerPasajero(1);
+        v.recogerPasajero(3);
+        v.recogerPasajero(6);
+        v.gestionarMarcha();
+        v.gestionarPuerta();
+        v.gestionarMarcha();
+        v.gestionarMotor();
+        v.gestionarMarcha();
+        v.moverArriba(1);
+        v.moverIzquierda(2);
+        v.moverAbajo(3);
+        v.recogerPasajero( 6);
+        v.gestionarMarcha();
+        v.gestionarPuerta();
+        v.recogerPasajero(4);
+        System.out.println(v.calcularDistanciaAcopio());
+          
 
     }
 
