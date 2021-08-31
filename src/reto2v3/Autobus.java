@@ -6,9 +6,16 @@ public class Autobus extends Vehiculo {
 
     public Autobus(String name, int nPasajeros) {
         super(name, nPasajeros);
-       
-        System.out.println("Esatdo Puerta: " + puertaAbierta);
+
+        System.out.println("Estado Puerta: " + puertaAbierta);
         System.out.println("");
+    }
+
+    @Override
+    public void dejarPasajero() {
+        if (!puertaAbierta) {
+            super.dejarPasajero();
+        }
     }
 
     public void recogerPasajero(int n) {
@@ -29,7 +36,7 @@ public class Autobus extends Vehiculo {
     public void gestionarMarcha() {
         System.out.println("gestionarMarcha();");
 
-        if (/*super.isMotorEncendido() && */!puertaAbierta) {
+        if (super.isMotorEncendido() && !puertaAbierta) {
             super.setEnMarcha(!super.isEnMarcha());
         }
         System.out.println("Esatdo Marcha: " + isEnMarcha());
@@ -39,9 +46,10 @@ public class Autobus extends Vehiculo {
         System.out.println("gestionarPuerta();");
         if (!puertaAbierta && !isEnMarcha()) {
             puertaAbierta = true;
-        }else
+        } else {
             puertaAbierta = false;
-        
+        }
+
         System.out.println("Esatdo Puerta: " + puertaAbierta);
     }
 
